@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Library</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/developer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../css/semester.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="navbar_custom">
+
+            <div class="logo">
+                <h2>E-Library</h2>
+            </div>
+
+            <ul class="links">
+                <li><a href="/E-Library/index.html">Home</a></li>
+                <li><a href="program.html">Programming Books</a></li>
+                <li><a href="semester.html">Semester Books</a></li>
+                <li><a href="developer.html">Developers</a></li>
+            </ul>
+
+
+            <div class="toggle">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+    <div class="heading">
+        <h1>Semester 7 & 8 </h1>
+    </div>
+
+    <section id="mainsemcontainer">
+        <!-- <div class="semcard">
+    <div class="quantimage">
+    <img src="https://aktu-notes.in/wp-content/uploads/2022/04/aktu-notes.png" alt="" srcset="">
+  </div>
+  <div class="quantname"><span> NAME </span></div>
+  
+   <div class="quantdownload"> <a href="/E-Library/content/semester1&2/${i}.pdf" target="_blank"><button> Download</button></a></div>
+    
+  </div> -->
+    </section>
+
+
+
+    <footer>
+        <div class="main_foot">
+            <div class="socialtext">
+                Follow me on Social Media
+            </div>
+            <div class="elements"><a href="https://www.linkedin.com/in/vaibhav-chauhan-81b1a124a/" target="_blank"> <span><ion-icon size="large"
+                            name="logo-linkedin"></ion-icon></span></a>
+                <a href="https://www.instagram.com/__vaibhav__chauhan__/" target="_blank"><span><ion-icon size="large" name="logo-instagram"></ion-icon></span></a>
+                <a href='https://github.com/Vaibhav2003Chauhan' target="_blank"><span><ion-icon size="large" name="logo-github"></ion-icon></span></a>
+            </div>
+            <div class="hostername">Vaibhav Chauhan</div>
+        </div>
+    </footer>
+    <script>
+       quantam_name = ['Artificial Intelligence','Cloud Computing','Renewable Energy Resources','Rural Developement'] 
+        for (let i = 0; i < quantam_name.length; ++i) {
+            let sembox = `<div class="semcard">
+    <div class="quantimage">
+    <img src="../images/quantum.jpg" alt="" srcset="">
+  </div>
+  <div class="quantname"><span> ${quantam_name[i]} </span></div>
+  
+   <div class="quantdownload"> <a href="../content/sem/semester7&8/${quantam_name[i]}.pdf" target="_blank"><button> Download</button></a></div>
+    
+  </div> `
+            let mainbox = document.getElementById('mainsemcontainer').innerHTML += sembox
+        }
+    </script>
+    <script src="/E-Library/js/nav.js"></script>
+
+    <!-- script for icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Library</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/developer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <style>
+        .semestercontainer {
+            width: 60vw;
+            height: 90px;
+            background-color: black;
+            border: 5px solid purple;
+
+            text-align: center;
+            margin: auto;
+            margin-top: 15px;
+            padding-top: 20px;
+            font-size: 34px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+        }
+
+        .semestercontainer a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .mainsem {
+            margin-top: 15px;
+            justify-content: space-evenly;
+            position: relative;
+            z-index: 12;
+            padding: 14px 5px;
+            text-align: center;
+        }
+        @media (min-width: 458px )and (max-width:600px)
+{
+   .semestercontainer {
+          font-size: 28px;
+          width: 60vw;
+ }
+}
+@media (min-width: 300px )and (max-width:458px)
+{
+   .semestercontainer {
+          font-size: 25px;
+ }
+}
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="navbar_custom">
+
+            <div class="logo">
+                <h2>E-Library</h2>
+            </div>
+
+            <ul class="links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="program.html">Programming Books</a></li>
+                <li><a href="semester.html">Semester Books</a></li>
+                <li><a href="developer.html">Developers</a></li>
+            </ul>
+
+
+            <div class="toggle">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+    <div class="heading">
+        <h2>Semester Wise Books</h2>
+    </div>
+
+    <div class="mainsem">
+
+
+        <div class="semestercontainer">
+            <a href="../pages/sem1&2.html">
+                Semester 1 & 2
+            </a>
+        </div>
+
+        <div class="semestercontainer">
+            <a href="../pages/sem3&4.html">
+                Semester 3 & 4
+            </a>
+        </div>
+
+        <div class="semestercontainer">
+            <a href="../pages/sem5&6.html">
+                Semester 5 & 6
+            </a>
+        </div>
+
+
+        <div class="semestercontainer">
+            <a href="../pages/sem7&8.html">
+                Semester 7 & 8
+            </a>
+        </div>
+
+
+
+
+    </div>
+
+    <div id="particles-js"></div>
+
+
+
+    <footer>
+        <div class="main_foot">
+            <div class="socialtext">
+                Follow me on Social Media
+            </div>
+            <div class="elements"><a href="https://www.linkedin.com/in/vaibhav-chauhan-81b1a124a/" target="_blank"> <span><ion-icon size="large"
+                            name="logo-linkedin"></ion-icon></span></a>
+                <a href="https://www.instagram.com/__vaibhav__chauhan__/" target="_blank"><span><ion-icon size="large" name="logo-instagram"></ion-icon></span></a>
+                <a href='https://github.com/Vaibhav2003Chauhan' target="_blank"><span><ion-icon size="large" name="logo-github"></ion-icon></span></a>
+            </div>
+            <div class="hostername">Vaibhav Chauhan</div>
+        </div>
+    </footer>
+    <script src="../js/nav.js"></script>
+    <script src="../js/particle.js"></script>
+    <script src="../js/app.js"></script>
+
+    <!-- script for icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Library</title>
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/developer.css">
+  <!-- <link rel="stylesheet" href="./css/footer.css"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <!-- nav bar -->
+
+  <nav id="navbar">
+    <div class="navbar_custom">
+
+      <div class="logo">
+        <h2>E-Library</h2>
+      </div>
+
+      <ul class="links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="program.html">Programming Books</a></li>
+        <li><a href="semester.html">Semester Books</a></li>
+        <li><a href="developer.html">Developers</a></li>
+      </ul>
+
+
+      <div class="toggle">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+  </nav>
+  <div class="heading">
+    <h1>Developers</h1>
+  </div>
+
+  <div id="particles-js"></div>
+
+  <!-- main content start here  -->
+  <section id="developercontainer">
+
+  </section>
+
+  <footer>
+    <div class="main_foot">
+      <div class="socialtext">
+        Follow me on Social Media
+      </div>
+      <div class="elements"><a href="https://www.linkedin.com/in/vaibhav-chauhan-81b1a124a/" target="_blank">
+          <span><ion-icon size="large" name="logo-linkedin"></ion-icon></span></a>
+        <a href="https://www.instagram.com/__vaibhav__chauhan__/" target="_blank"><span><ion-icon size="large"
+              name="logo-instagram"></ion-icon></span></a>
+        <a href='https://github.com/Vaibhav2003Chauhan' target="_blank"><span><ion-icon size="large"
+              name="logo-github"></ion-icon></span></a>
+      </div>
+      <div class="hostername">Vaibhav Chauhan</div>
+    </div>
+  </footer>
+
+
+
+  <script>
+    // images array was for to use multiple images as per the  requirement 
+    // var images = ['https://cdnb.artstation.com/p/assets/images/images/038/479/419/large/yamil-yaluk-1-dibujo.jpg?1623202604',
+    // 'https://cdnb.artstation.com/p/assets/images/images/038/479/419/large/yamil-yaluk-1-dibujo.jpg?1623202604']
+    var names = ['Vaibhav Chauhan', 'Akshay Singh']
+    var roles = ['Developer', 'Contributor']
+    var insta = ['https://www.instagram.com/__vaibhav__chauhan__/', 'https://www.w3schools.com/']
+    var github = ['https://github.com/Vaibhav2003Chauhan', 'https://www.google.com/']
+    var linkedin = ['https://www.linkedin.com/in/vaibhav-chauhan-81b1a124a/', 'https://www.google.com/']
+
+
+    for (let i = 0; i < names.length; ++i) {
+      let inbox = `<div class="user_card">
+        <div class="dev_image">
+    <img src="../images/E-lib dev.jpg" alt="">
+  </div>
+  <div class="dev_desc">
+    <span id="name">${names[i]}</span>
+    <span id="role">${roles[i]}</span>
+  </div>
+ 
+  <hr>
+  <div class="foot">
+    <a href=${linkedin[i]} target="_blank"> <span class="icons"><ion-icon
+          name="logo-linkedin"></ion-icon></span></a>
+    <a href=${insta[i]} target="_blank"><span class="icons"><ion-icon
+        name="logo-instagram"></ion-icon></span></a>
+    <a href=${github[i]} target="_blank"><span class="icons"><ion-icon
+          name="logo-github"></ion-icon></span></a>
+  </div></div>`
+      let main_box = document.getElementById('developercontainer').innerHTML += inbox
+    }
+
+  </script>
+  <script src="../js/nav.js"></script>
+  <script src="../js/particle.js"></script>
+  <script src="../js/app.js"></script>
+  <!-- script for icons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>
